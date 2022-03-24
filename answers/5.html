@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Write a program to remove duplicates from an array</h1>
+    <ul>
+        <li><strong>Using Set</strong>
+            <pre>
+                <code>
+                    let city = [
+                        "surat",
+                        "ahmedabad",
+                        "rajkot",
+                        "mumbai",
+                        "surat",
+                        "delhi",
+                        "ahmedabad",
+                        "anand",
+                    ];
+  
+                    // For removing the duplicate values
+                    // we are using the Set() function
+                    let unique_city = [new Set(city)];
+  
+                    // Printing the unique cities
+                    console.log(unique_city);
+                </code>
+            </pre>
+        </li>
+        <li><strong>Using forEach</strong>
+            <pre>
+                <code>
+                    const uniqueCities = [];
+                    city.forEach(c=>{
+                        if(!uniqueCities.includes(c)){
+                            uniqueCities.push(c);
+                        }
+                    });
+                    console.log(uniqueCities);
+                </code>
+            </pr'[[///=/=][--9"
+            ]]
+        </li>
+    </ul>
+</body>
+</html>

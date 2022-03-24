@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Prototype chaining</h1>
+    <li>Each and every function in JavaScript automatically has a property called prototype.</li>
+    <li>Every object that's created by a certain constructor function will get access to all the methods and properties that we define on the constructors prototype property.</li>
+    <li>Let say we have a constructor function
+        <pre>
+            <code>
+                const Person = function(firstName, birthYear){
+                    console.log(this);
+                    this.firstName = firstName;
+                    this.birthYear = birthYear;
+                }
+                const vivek = new Person('vivek', 1987);
+                const arpit = new Person('arpit', 1988);
+            </code>
+        </pre>
+    </li>
+</body>
+</html>

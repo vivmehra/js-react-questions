@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Difference between Deep Copy and Shallow Copy.</h1>
+    <pre>
+    <code>
+        var employee = {
+            eid: "E102",
+            ename: "Jack",
+            eaddress: "New York",
+            salary: 50000,
+            details: {
+                gender: "male",
+                email: { emailname: "abc@gmail.com", domain: ".com"}
+            }
+        }
+        
+        var newEmployee = employee;    // Shallow copy
+        var newEmployee = JSON.parse(JSON.stringify(employee)); // deep copy
+        var deepCopy = lodash.cloneDeep(employee); //deep copy with lodash
+    </code>
+</pre>
+</body>
+</html>

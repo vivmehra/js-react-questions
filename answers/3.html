@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hoisting</h1>
+    <ul>
+        <li>Inside Execution Context we have 3 things, variable environment, scope chain, this keyword.</li>
+        <li>Hoisting: Some types of variables accessible/usable before they are declared.</li>
+        <li>Some people think that they are magically lifted to top of the scope, because it seems so.</li>
+        <li>Instead, behind the scenes, the code is basically scanned for variable declarations before it is executed.</li>
+        <li>This happens during the so-called creation phase of the execution context</li>
+        <li>Then for each variable that is found in the code, a new property is created in a variable environment object. That's how hoisting really works.</li>
+        <li>Hoisting does not work the same for all variable types.</li>
+        <img src="./images/hoisting.png"/>
+    </ul>
+</body>
+</html>

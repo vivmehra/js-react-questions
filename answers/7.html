@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Closures with example and real life implementation</h1>
+    <ul>
+      <li>A function along with its lexical scope bundled together is a closure.</li>
+      <li>A closure gives you access to an outer function’s scope from an inner function</li>
+      <li>Closures are created every time a function is created,at function creation time.</li>
+      <li>Every scope has access to everything outside of its scope</li>
+      <li>
+        <strong>First Use case: Factory Functions</strong>
+        <pre>
+                <code>
+
+	// Factory Function creating person
+	var Person = function (name, age) {
+		const greeting = function () {
+			return (
+				'Hello I am ' + name
+					+ '. I am ' + age
+					+ ' years old. '
+			);
+		};
+		return greeting;
+	};
+
+	var person1 = Person('Abhishek', 20);
+	console.log(person1());
+
+	var person2 = Person('Raj', 25);
+	console.log(person2());
+
+                </code>
+        </pre>
+      </li>
+      <li><strong>Second Use Case: Private variables in the above example person1.age is undefined</strong></li>
+      <li>Different ways a closure can be written</li>
+      <img src="./images/closures.png" width="50%"/>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Palindrome program</h1>
+    <pre>
+        <code>
+            function palindrome(str){
+                let first = 0;
+                let last = str.length-1;
+
+                while(first < last){
+                    if(str[first] !== str[last]){
+                        return false;
+                    }
+                    first++;
+                    last--;
+                }
+                return true
+            }
+            palindrome('racecar')
+        </code>
+    </pre>
+    <h3>Alternate Solution 1</h3>
+    <pre>
+        <code>
+
+            function pallindrome(str){
+                let len = str.length
+                let mid = Math.floor(len/2);
+
+                for(let i =0; i< mid; i++){
+                    if(str[i] !== str[len-1-i]){
+                        return false;
+                    }
+                }
+                return true
+            }
+            pallindrome('racecar')
+        </code>
+    </pre>
+    <h3>Alternate Solution 2</h3>
+    <pre>
+        <code>
+            function pallindrome(str){
+                return str == str.split("").reverse().join("");
+             }
+             pallindrome('racecarc')
+        </code>
+    </pre>
+</body>
+</html>

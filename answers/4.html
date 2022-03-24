@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Map vs Set</h1>
+    <ul>
+      <li>
+        <strong
+          >Set is one dimensional unique array, however Map is 2D and has key-value pair, where key shall be
+          unique</strong
+        >
+      </li>
+      <li>Use a Set when your dataset needs to be composed of unique values</li>
+      <li>Set is not a key-value store</li>
+      <li>Use a Map when you have pairs of associated data. You map the keys to the values</li>
+      <li>In Map() , key can be any type [String, number, Object] but in regular object key must be a string type.</li>
+    </ul>
+    <pre>
+        <code>
+            var array = [1, 2, 3, 3];
+
+            var set = new Set(array); // Will have [1, 2, 3]
+            assert(set.size, 3);
+
+            var map = new Map();
+            map.set('a', 1);
+            map.set('b', 2);
+            map.set('c', 3);
+            map.set('C', 3);
+            map.set('a', 4); // Has: a, 4; b, 2; c: 3, C: 3
+            assert(map.size, 4);
+        </code>
+    </pre>
+  </body>
+</html>
